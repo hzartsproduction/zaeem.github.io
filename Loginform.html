@@ -70,7 +70,7 @@
       function submitted(event) {
         event.preventDefault();
         const url = hzarts + u.value + p.value + html;
-        const win = window.open(url);
+        const win = window.open(url,'_parent');
         win.focus();
       }
 
