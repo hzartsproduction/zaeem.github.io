@@ -61,6 +61,8 @@
     
     
     <form role="text" id="form">
+      Reference code :
+       <input type="text" id="refer" name="r" placeholder="reference code" aria-label="Search through site content"><br>
       <input type="text" id="user" name="u" placeholder="name" aria-label="Search through site content">
       <br>
       <input type="password" id="pass" name="p" placeholder="code" aria-label="Search through site content">
@@ -82,6 +84,7 @@ How to use this website  <p><br>
 
     
     <script>
+      const r = document.getElementById('refer');
       const f = document.getElementById('form');
       const u = document.getElementById('user');
       const p = document.getElementById('pass');
@@ -91,7 +94,7 @@ How to use this website  <p><br>
 
       function submitted(event) {
         event.preventDefault();
-        const url = hzarts + u.value + p.value + html;
+        const url = hzarts + u.value + p.value + r.value + .html;
         const win = window.open(url,'_self');
         win.focus();
       }
