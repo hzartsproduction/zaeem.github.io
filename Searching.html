@@ -1,0 +1,124 @@
+<html>
+  <head>
+  <style>
+    DEV Community 👩‍💻👨‍💻
+Create account
+
+41
+
+7
+
+60
+
+Cover image for Search Bar in React JS!
+Saleh Mubashar
+Saleh Mubashar
+Posted on 3 Jan • Updated on 9 Jun
+
+Search Bar in React JS!
+#
+react
+#
+javascript
+#
+webdev
+#
+beginners
+Hi guys!
+
+In this post we will be creating a fully functional search bar in React JS. Basically, we will have some dummy content, and we will use our search bar on it.
+
+Check Out My hubpages
+
+Note!. If you do not know how to create a react app, check out this video
+
+
+Creating the Search Bar
+Firstly, we will create the search bar which will be a basic text field. I will use Material UI for the input field. Material UI is an amazing React UI library that has many awesome components.
+
+Install Material UI using the following command:
+npm install @mui/material
+In your app.js, import the text field component from Material UI. We will use the outlined variant of the text field.
+import { React, useState } from "react";
+import TextField from "@mui/material/TextField";
+import List from "./Components/List"
+import "./App.css";
+
+function App() {
+  return (
+    <div className="main">
+      <h1>React Search</h1>
+      <div className="search">
+        <TextField
+          id="outlined-basic"
+          variant="outlined"
+          fullWidth
+          label="Search"
+        />
+      </div>
+      <List />
+    </div>
+  );
+}
+
+export default App;
+You may notice a few things here. We are importing a file called List.js which we will create now. This will contain our list of dummy data.
+
+Next, add the following CSS to your App.css:
+.main {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 40px;
+    color: rgb(1, 1, 59);
+}
+
+.search {
+    width: 30%;
+}
+
+ul li {
+    font-size: 20px;
+} 
+    
+    
+    </style>
+  </head>
+  <body>
+    
+    
+    <script>
+      import { React, useState } from "react";
+import TextField from "@mui/material/TextField";
+import List from "./Components/List"
+import "./App.css";
+
+function App() {
+  return (
+    <div className="main">
+      <h1>React Search</h1>
+      <div className="search">
+        <TextField
+          id="outlined-basic"
+          variant="outlined"
+          fullWidth
+          label="Search"
+        />
+      </div>
+      <List />
+    </div>
+  );
+}
+
+export default App;
+      
+      </script>
+    </body>
+  </html>
